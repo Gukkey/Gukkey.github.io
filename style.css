@@ -1,0 +1,125 @@
+:root{
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    --bg-color: #24283b;
+    --bg-color-secondary: #373d57;
+    --link-background: #6e7baa;
+    --link-background-hover: #a0abd4;
+    --foreground: #ffffff;
+    --foreground-secondary: #cfc9c2;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.container{
+    color: var(--foreground);
+    background-color: var(--bg-color-secondary);
+    padding: 1rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.container #profile{
+    border-radius: 8px;
+    color: var(--foreground-secondary);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    background-color: var(--link-background);
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    margin: 8px 0px;
+}
+
+#profile {
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+.link a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{
+    width: 100%;
+}
+
+h1, p {
+        margin: 0;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+.link:hover{
+            background-color: var(--link-background-hover);
+}
+
+
+@media (min-width: 768px) {
+    .container{
+        width: 540px;
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+        height: 200px;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    main{
+        align-items: start;
+        margin-left: 1rem;
+    }
+
+    #profile {
+        margin-bottom: 0;
+    }
+
+    .links {
+        display: flex;
+        width: fit-content;
+        margin-top: 1rem;
+
+    }
+    .link{
+        margin: 0 8px 0 0;
+        width: 80px
+    }
+
+}
